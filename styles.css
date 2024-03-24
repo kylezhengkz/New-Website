@@ -1,5 +1,6 @@
 :root {
-  --primary-color: rgb(37, 226, 37);
+  --my-green: rgb(37, 226, 37);
+--my-dark-blue: rgb(5, 48, 76);
 }
 
 body {
@@ -13,7 +14,7 @@ body {
 }
 
 .link-section {
-  background-color: rgb(5, 48, 76);
+  background-color: var(--my-dark-blue);
   padding-top: 10px;
   padding-bottom: 10px;
   position: fixed;
@@ -43,7 +44,7 @@ body {
 }
 
 .link:hover {
-  color: var(--primary-color);
+  color: var(--my-green);
 }
 
 .intro-section {
@@ -54,7 +55,7 @@ body {
 }
 
 .intro-section * {
-  color: var(--primary-color);
+  color: var(--my-green);
   font-family: "Courier New", Courier, monospace;
   margin: 0;
   animation: typing 1.5s steps(15, end) forwards,
@@ -69,7 +70,7 @@ body {
     width: 0;
   }
   to {
-    width: 500px;
+    width: 671px;
   }
 }
 
@@ -80,4 +81,13 @@ body {
   50% {
     border-right-color: transparent;
   }
+}
+
+.rectangular-oval {
+    width: 300px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
 }
